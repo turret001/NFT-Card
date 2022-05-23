@@ -44,7 +44,7 @@ This is an NFT display page, there's not much to say about it.
 
 - Website - [Can](https://www.canakcan.me)
 - Frontend Mentor - [@turret001](https://www.frontendmentor.io/profile/turret001)
-- LinkedIn - [@turret001](https://www.linkedin.com/in/kemalcanakcan/)
+- LinkedIn - [kemalcanakcan](https://www.linkedin.com/in/kemalcanakcan/)
 
 
 ## Acknowledgments
