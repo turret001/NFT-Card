@@ -6,27 +6,14 @@
 
   /* COLORS */
   --title-color: hsl(0, 0%, 100%);
-  --description-color: hsl(0, 0%, 100%);
+  --description-color: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
 
   --body-background: hsl(217, 54%, 11%);
   --card-background: hsl(216, 50%, 16%);
   --test: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
-
-p{
-  font-size: var(--description-size);
-  margin-top:10px;
-  font-weight: 400;
-  color:var(--description-color);
-}
-
-h1{
-  font-weight: 700;
-  color: var(--dark-blue);
-  font-size: var(--title-size)
 }
 
 h1,p{
@@ -51,24 +38,121 @@ body{
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px -1px #000000; 
   box-shadow: 0px 0px 2px -1px #000000;
+  z-index: 1;
 }
-.card-title{
-  color: var(--title-color);
-  margin-top: 25px;
-}
-.card-description{
-  color: var(--description-color);
-  margin-top: 10px;
-}
-.card-title, .card-description{
-  
-}
+
 .card-image {
   display: flex;
   justify-content: center;
   margin-bottom:10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* z-index: 1; */
 }
-.card-image > img{
+.nft-image{
   width: 95%;
   border-radius: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.card-overlay{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: hsla(178, 100%, 50%, 0.3);
+  border-radius: 10px;
+  width: 95%;
+  height:100%;
+}
+
+.img-over{
+  position: absolute;
+  z-index: 5;
+  top:40%;
+  left: 40%;
+}
+.card-image:hover .card-overlay{
+  opacity:1;
+  cursor: pointer;
+}
+
+.card-title{
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: var(--title-size);
+  text-decoration: none;
+}
+
+.card-title:hover{
+  color:var(--cyan);
+}
+
+h1{
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: var(--title-size);
+  text-decoration: none;
+}
+
+.card-description{
+  color: hsl(215, 51%, 70%);
+  font-size: var(--description-size);
+  margin-top:20px;
+  font-weight: 300 !important;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nft-price{
+  color:var(--cyan  );
+  font-weight: 600;
+}
+
+.nft-date{
+  color: var(--description-color);
+}
+p > img{
+  display: inline;
+  margin-right: 5px;
+  position: relative;
+  top:3px;
+}
+
+hr{
+  border: 1px solid var(--description-color);
+  margin-top:20px;
+}
+
+.nft-footer{
+  margin-top:20px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nft-footer > img{
+  display: inline-block;
+  max-width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.nft-footer > p{
+  color:var(--description-color);
+  display: inline-block;
+}
+
+.nft-author{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nft-author:hover{
+  color:var(--cyan)
 }
