@@ -12,7 +12,7 @@
 
   --body-background: hsl(217, 54%, 11%);
   --card-background: hsl(216, 50%, 16%);
-  --test: hsl(215, 32%, 27%);
+  --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -127,7 +127,7 @@ p > img{
 }
 
 hr{
-  border: 1px solid var(--description-color);
+  border: 1px solid var(--line);
   margin-top:20px;
 }
 
