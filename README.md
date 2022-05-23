@@ -19,6 +19,8 @@ This is an NFT display page, there's not much to say about it.
 
 ### Screenshot
 
+![image](https://user-images.githubusercontent.com/24281147/169797838-d1bbbde7-483c-4f48-b875-da8569447d41.png)
+
 
 ### Links
 
